@@ -1,0 +1,229 @@
+/* Estilos globais */
+.topo {
+    background-color: #d85915;
+    height: 40px;
+    padding: 2px;
+}
+
+.topo li {
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.topo a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(244, 246, 249);
+}
+
+.topo li a:hover {
+    color: rgba(247, 214, 166, 0.897);
+}
+
+.fundo1 {
+    background-color: rgb(233, 219, 212);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+.centro {
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    color: #181202;
+}
+
+/* Estilos para a classe .car-duo */
+.car-duo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* Espaço entre os elementos */
+}
+
+/*menu hover (escondido)*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    text-align: center;
+}
+
+.hidden-div {
+    width: 400px;
+    height: 200px;
+    background-color: #3498db;
+    opacity: 0; /* Inicialmente, a div está oculta */
+    transition: opacity 0.5s; /* Adiciona uma transição suave */
+}
+
+.container:hover .hidden-div {
+    opacity: 1; /* Quando o cursor passa sobre .container, a div fica visível */
+}
+
+.img1 {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    height: 30vh;
+    text-align: right;
+}
+
+.img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 30vh;
+    text-align: left;
+}
+
+/*formulario 1*/
+.search-form {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px; /* Defina a largura máxima desejada */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.form-label {
+    flex: 1;
+    max-width: 80px; /* Defina a largura máxima desejada para os rótulos */
+}
+
+.form-input {
+    flex: 2;
+    padding: 5px;
+    width: 100%; /* Preenche o espaço restante disponível */
+}
+
+.form-button {
+    width: 100px; /* Defina a largura desejada para o botão */
+}
+
+.backimg {
+    width: 100%;
+    height: 300px; /* Defina a altura desejada */
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/016/953/non_2x/woman-with-ginger-red-hair-wearing-sunglasses-driving-car-in-solo-weekend-getaway-vacation-trip-looking-out-the-window-in-summer-with-lush-green-nature-in-countryside-road-for-freedom-and-adventure-free-photo.jpg');
+    /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Para cobrir toda a área da div */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+    background-position: center; /* Para centralizar a imagem */
+    color: white; /* Cor do texto para melhor visibilidade */
+    text-align: center; /* Alinhar o conteúdo no centro */
+    padding: 20px; /* Espaçamento interno para melhor legibilidade */
+}
+
+/* Estilos do carrossel */
+.car-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; /* Adicione esta linha */
+}
+
+.car {
+    width: 30%; /* Define a largura de cada carro, você pode ajustar conforme necessário */
+    padding: 10px;
+    box-sizing: border-box; /* Inclui as bordas no cálculo de largura */
+    border: 1px solid #ccc;
+    margin: 0;
+    position: relative; /* Necessário para o posicionamento absoluto da descrição */
+    transition: transform 0.3s ease;
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+/* botões de navegação */
+.prev,
+.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.car-carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* descrição */
+.car-description {
+    background-color: rgba(234, 115, 11, 0.312);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+    padding: 5px;
+    opacity: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.car:hover .car-description {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* Mostrar descrição apenas para o carro no centro em destaque */
+.car.show-description .car-description {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*footer*/
+.foo {
+    text-align: center;
+    background-color: #1057dbac;
+    align-items: center;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora de Carros</title>
+ 
+    <link rel="stylesheet" href="./reservar.css">
+</head>
+<body class ="fundo1">
+  
+
+   <!-- Barra de navegação -->
+   <nav id="main-menu">
+    <ul class="topo">
+        <br>
+        <li><a href="../home/index.html">Início</a></li>
+        <li><a href="../carrosDisponiveis/carrosDispo.html">Carros Disponíveis</a></li>
+        <li><a href="../reservar/reservar.html">Reservar</a></li>
+        <li><a href="../contato/contato.html">Contato</a></li>
+        <li><a href="../login/login.html">Login</a></li>
+    </ul>
+</nav>
+<!-- Fim da barra de navegação -->
+    <br>
+    <br>
+    <br>
+    
+  
+    <main>
+     
+        <section id="reservation">
+           
+            <div>
+                <div>
+                    <h2>Reservar um Carro</h2>
+
+                </div>
+            <form action="processar_reserva.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="carro">Selecione um Carro:</label>
+                <select id="carro" name="carro" required>
+                    <option value="carro1">Carro 1</option>
+                    <option value="carro2">Carro 2</option>
+                    <option value="carro3">Carro 3</option>
+                    <!-- Adicione mais opções de carros aqui -->
+                </select>
+                
+                <label for="data">Data da Reserva:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="mensagem">Mensagem (opcional):</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Locadora de Carros</p>
+    </footer>
+</body>
+</html>
