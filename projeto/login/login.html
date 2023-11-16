@@ -3,31 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css"
-    >
-    <title>Login - Empresa de Locação de Veículos</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="../javascript/login">
+    <title>Login - navy</title>
 </head>
 <body>
+    
+<div class="imagemLogin">
+
+ <div class="parteForaForm"> 
+
     <div class="login-container">
-        <h2>Login - Empresa de Locação de Veículos</h2>
-        <form>
+       <img src="../imagensDoNavy/logo_vitrina_branco.png" alt="logo da Navy Locadora de veiculos" width="90 px" 
+       height="90 px" style="position: relative; left: 108.8px; bottom: 64px; ">
+
+        <form >
             <div class="form-group">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" class="input-field" name="username" required>
-            </div>
+                <label for="username" style="  background-color: transparent; border: none; "> </label>
+                <input type="text" id="username" class="input-field" placeholder="Usuário"   name="username" required>
+     </div>
+
+            <img src="../imagensDoNavy/iconUsuario.png" alt="icone de usuario" width=" 20px" height="20px" 
+            style="position: relative; left: 262.9px; bottom: 69px;">
+
+        <div class="form-group">
+                <label for="password"></label>
+                <input type="password" id="password"  class="input-field"  placeholder="Senha" name="password" required>
+        </div>
             <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" id="password" class="input-field" name="password" required>
+                <button type="submit" class="login-button">Login</button>
             </div>
-            <div class="form-group">
-                <button type="submit" class="login-button">Entrar</button>
-            </div>
+
+            <img src="../imagensDoNavy/iconSenha.png" alt="icone de cadeado" width="20px" height="24px"
+            style="position: relative; left: 262.9px; bottom: 120px;">
         </form>
 
         <div class="back-button" >
-            <a href="../home/index.html" class="centro">Voltar à Página Inicial</a>
+            <a href="../cadastroUsuario/cadastroUsuario.html" class="centro">Não tenho uma conta</a>
         </div>
-       
-    </div>
+
+        <div class="imagemForaForm">
+            <img src="../imagensDoNavy/geometricos.png" alt="" width="360px"
+            style="  position: absolute; bottom: -155px; left: 240px;">
+        </div>
+ </div>
+ 
+</div>
+
+
+
 </body>
 </html>
