@@ -11,18 +11,17 @@ body {
 }
 
 .login-container {
-
     border-radius: 25px;
     box-shadow: inset 0 0 0 5px #c34034dc;
-    padding: 10px;
+    padding: 100px;
     width: 300px;
     height: 350px;
     align-items: center;
     position: relative;
     bottom: -260px ;
-    left: 45.2px!important;
+    left: -15.2px!important;
     transform: translateY(-50%);
-
+    
 
 }
 .parteForaForm{
@@ -30,13 +29,14 @@ body {
     border-bottom-right-radius: 21%;
     align-items: left;
     background-image: linear-gradient(#764967d5, #040476,  #040477);
-    padding: 200px;
+    padding: 295px;
     width: 300px;
     height: 400px;
     position: relative;
-    bottom: -340.9px;
+   
     left: -151.2px!important;
-    transform: translateY(-50%);
+   
+    background-size: cover;
    
    
 }
@@ -51,6 +51,7 @@ body {
     border: none; 
     bottom: 30px;
     position: relative;
+    background-size: cover;
 }
 
 .form-group label {
@@ -72,8 +73,11 @@ body {
     border-bottom: 2px solid #E35245;
     position: relative;
     left: 15px;
+    background-color: transparent;
 }
-  
+.input-field:focus{
+    background-color: transparent !important;
+}
 
 .login-button {
     width: 100%;
@@ -127,10 +131,13 @@ body {
 /*imagem de fundo*/
 .imagemLogin{
     background-image: url("https://images.pexels.com/photos/3764000/pexels-photo-3764000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    height: 740px;
-    width: 250%;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat; 
     background-size: cover;
+    display: flex;
+    align-items: center;
+
 }
 #username::placeholder{
     color: #E35245;

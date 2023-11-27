@@ -1,0 +1,19 @@
+const { db } = require('./conexao');
+const LocalizacaoRef = db.ref("Localizacao");
+
+module.exports = {
+  listarTodos: async function () {
+    try {
+        let lista = [];
+        await LocalizacaoRef.once("value", async (snapshot) => {
+            for (let key in snapshot.val()) {
+                lista.push({ ...snapshot.val()[key], id: key });
+            }
+        })
+        return lista;
+    } catch (err) {
+      console.log(err.stack);
+    }
+  },
+
+};

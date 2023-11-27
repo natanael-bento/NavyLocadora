@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; 
+   background-color: antiquewhite;
+
+    
+  }
+
+  .formularioCompleto {
+    display: flex;
+   justify-content: center;
+    height: 560px;
+    width: 880px;
+    padding: 5px;
+    background-color: rgba(44, 133, 229, 0.419);
+    border-radius: 8px;
+    box-shadow: #229fcc;
+    background-size: cover;
+    
+  }
+  
+
+.imgFundo{
+
+}
+
+
+  .fundo2 {
+    transform: scaleX(-1);
+    background-image: url('../imagensDoNavy/linda-jovem-motorista-com-a-chave-do-carro-na-mao-feliz-dona-de-um-novo-automovel_264197-4585.avif');
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    border-radius: 16%;
+    border-bottom-right-radius: 36%;
+    border-top-left-radius: 36%;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  
+   
+  }
+  .fundo1{
+    background-image: url('../imagensDoNavy/casal-feliz-na-concessionaria-de-carros_23-2148130144.avif');
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    border-radius: 16%;
+    border-bottom-right-radius: 36%;
+    border-top-left-radius: 36%;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  
+  }
+
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .column {
+    grid-column: span 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(169, 68, 68);
+    background-color: transparent;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .btnCadastro {
+    width: 300px;
+    padding: 4px;
+    height: 36px;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    font-family: sans-serif Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  }
+  
+  .btnVoltar{
+    width: 300px;
+    padding: 4px;
+    height: 28px;
+    background-color: #e35245e4;
+    color: #f4e5e5 !important;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    font-family:  sans-serif Impact, 'Arial Narrow Bold', sans-serif; 
+    font-size: 20px;
+    text-align: center;
+   
+  }
+  .btnCadastro {
+    background-color: rgba(28, 78, 194, 0.803);
+    color: rgb(243, 231, 208);
+    transition: background-color 0.3s ease;
+    width: 300px;
+    padding: 4px;
+    height: 36px;
+   
+  }
+  
+  .btnCadastro:hover {
+    background-color: rgba(52, 157, 210, 0.803);
+  }
+  
